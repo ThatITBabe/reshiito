@@ -1,0 +1,51 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    width: 16rem;
+    top: 25px;
+    background-color: #FFFFFF;
+    list-style: none;
+    padding: 20px;
+    border-radius: 6px;
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+.dropdown-item {
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    border-radius: 6px;
+    background-color: #BFDBFE;
+}
